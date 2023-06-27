@@ -21,5 +21,6 @@ public class ForgotPasswordTest extends BaseTest {
         String expectedText = " Reset Password ";
         String actualText = driver.findElement(By.tagName("h6")).getText();
         System.out.println(expectedText);
+        Assert.assertEquals("verify reset password",actualText, actualText);
     }
 }
